@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,50 @@
     transform: rotate(360deg);
   }
 }
+
+
+.hamburger{
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+ 
+  
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  margin: 6px 0px;
+  transition: 0.4s; 
+}
+
+
+@media only screen and (max-width: 640px){
+  .images{
+    display: none;
+  }
+}
+/* @media only screen and (max-width: 768px) {
+  
+} */
+
+/* .box{
+  transition: transform .3s;  
+  cursor: pointer;
+}
+
+.box:hover{
+  transition: transform .3s;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);  
+  transform: scale(1.1);
+} */
